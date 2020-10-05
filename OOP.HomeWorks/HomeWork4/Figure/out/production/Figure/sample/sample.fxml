@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="638.0" style="-fx-background-color: #c0c0c0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="120.0" prefHeight="403.0" prefWidth="638.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fx:id="figureImage" fitHeight="203.0" fitWidth="257.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="triangleButton" layoutX="14.0" layoutY="344.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="94.0" style="-fx-background-color: #900000;" text="Triangle" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="circleButton" layoutX="142.0" layoutY="344.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="94.0" style="-fx-background-color: #ff9900;" text="Circle" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="RhombusButton" layoutX="272.0" layoutY="344.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="101.0" style="-fx-background-color: #339900;" text="Rhombus" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="QuadrateButton" layoutX="402.0" layoutY="344.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="102.0" style="-fx-background-color: #006699;" text="Quadrate" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="rectangleButton" layoutX="521.0" layoutY="342.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="102.0" style="-fx-background-color: #663399;" text="Rectangle" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="side1OrRadiusLabel" layoutX="338.0" layoutY="20.0" prefHeight="23.0" prefWidth="48.0">
+               <font>
+                  <Font name="Century" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="side2Label" layoutX="338.0" layoutY="62.0" prefHeight="23.0" prefWidth="48.0">
+               <font>
+                  <Font name="Century" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="side3Label" layoutX="338.0" layoutY="98.0" prefHeight="23.0" prefWidth="48.0">
+               <font>
+                  <Font name="Century" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="side4Label" layoutX="338.0" layoutY="135.0" prefHeight="23.0" prefWidth="48.0">
+               <font>
+                  <Font name="Century" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="side1OrRadiusTextBox" layoutX="386.0" layoutY="19.0" opacity="0.0" prefHeight="26.0" prefWidth="242.0">
+               <font>
+                  <Font name="Century" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="side2TextBox" layoutX="386.0" layoutY="56.0" opacity="0.0" prefHeight="26.0" prefWidth="242.0">
+               <font>
+                  <Font name="Century" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="side3TextBox" layoutX="386.0" layoutY="93.0" opacity="0.0" prefHeight="26.0" prefWidth="242.0">
+               <font>
+                  <Font name="Century" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="side4TextBox" layoutX="386.0" layoutY="130.0" opacity="0.0" prefHeight="26.0" prefWidth="242.0">
+               <font>
+                  <Font name="Century" size="18.0" />
+               </font>
+            </TextField>
+            <Label fx:id="errorLabel" layoutX="327.0" layoutY="176.0" prefHeight="23.0" prefWidth="308.0">
+               <font>
+                  <Font name="Century" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="startButton" layoutX="272.0" layoutY="267.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="101.0" style="-fx-background-color: #339900;" text="Go!" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="perimeterLabel" layoutX="22.0" layoutY="267.0" text="P = ..." textFill="SILVER">
+               <font>
+                  <Font name="Century" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="squareLabel" layoutX="405.0" layoutY="267.0" text="S = ..." textFill="SILVER">
+               <font>
+                  <Font name="Century" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="figureNameLabel" layoutX="263.0" layoutY="37.0" text="Figure" textFill="WHITE">
+         <font>
+            <Font name="Century" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
