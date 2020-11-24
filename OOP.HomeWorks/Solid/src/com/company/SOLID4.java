@@ -7,22 +7,64 @@ package com.company;
 Перепишіть, розбивши інтерфейс на декілька інтерфейсів, керуючись принципом розділення інтерфейсу.
 Опишіть класи книжки (розмір та колір не потрібні, але потрібна ціна та знижки) та верхній одяг (колір, розмір, ціна знижка),
 які реалізують притаманні їм інтерфейси.*/
-
-interface IItem
+interface IItemPrice
 {
-    void applyDiscount(String discount);
-    void applyPromocode(String promocode);
-
-    void setColor(byte color);
-    void setSize(byte size);
-
     void setPrice(double price);
 }
 
-class Program
+interface IItemColour
 {
-    static void main(String[] args)
-    {
+    void setColor(byte color);
+}
 
+interface IItemSize
+{
+    void setSize(byte size);
+}
+
+interface IItemDiscount
+{
+    void applyDiscount(String discount);
+}
+
+interface IItemPromocode
+{
+    void applyPromocode(String promocode);
+}
+
+class Book implements IItemPrice, IItemDiscount
+{
+    private double price;
+    public void setPrice(double price)
+    {
+        this.price = price;
     }
+    public void applyDiscount(String discount)
+    {
+        System.out.println(discount);
+    }
+}
+
+class Coat implements IItemPrice, IItemDiscount,IItemColour,IItemSize
+{
+    private double price;
+    private byte size;
+    private byte color;
+    public void setPrice(double price)
+    {
+        this.price = price*2;
+    }
+    public void applyDiscount(String discount)
+    {
+        System.out.println(discount);
+    }
+    public void setSize(byte size)
+    {
+        this.size = size;
+    }
+    public void setColor(byte color)
+    {
+        this.color = color;
+    }
+
 }
