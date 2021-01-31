@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Programming/dbHomeWork1/Checks.h
+stdio.h
+-
+stdlib.h
+-
+
+D:/Programming/dbHomeWork1/Master.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+Checks.h
+D:/Programming/dbHomeWork1/Checks.h
+
+D:/Programming/dbHomeWork1/Structures.h
+
+D:/Programming/dbHomeWork1/main.c
+stdio.h
+-
+Structures.h
+D:/Programming/dbHomeWork1/Structures.h
+Master.h
+D:/Programming/dbHomeWork1/Master.h
+
